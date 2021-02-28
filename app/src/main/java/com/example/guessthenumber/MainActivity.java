@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "You got it! Try again.", Toast.LENGTH_SHORT).show();
             number = (int)(Math.random()*18) + 2;
         } else if(guess > number) {
-            Toast.makeText(this, "Lower!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Too high!", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Higher!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Too low!", Toast.LENGTH_SHORT).show();
         }
     }
 
